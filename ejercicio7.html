@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 7</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<form id="form">
+    <input type="text" id="campo">
+    <button type="submit">Enviar</button>
+    <p id="error" style="color:red;"></p>
+</form>
+
+<script>
+$("#form").submit(function(e){
+    if($("#campo").val() === ""){
+        e.preventDefault();
+        $("#error").text("El campo no puede estar vacío");
+    }
+});
+</script>
+
+</body>
+</html>

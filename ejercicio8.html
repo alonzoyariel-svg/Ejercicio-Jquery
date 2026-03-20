@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 8</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<div id="div">Haz clic derecho aquí</div>
+
+<script>
+$("#div").on("contextmenu", function(e){
+    e.preventDefault();
+    $(this).text("Evento de clic derecho detectado");
+});
+</script>
+
+</body>
+</html>

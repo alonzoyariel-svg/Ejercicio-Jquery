@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 3</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<ul>
+    <li>Cabeza</li>
+    <li>Cuerpo</li>
+    <li>Pie</li>
+</ul>
+
+<script>
+$("li").hover(
+    function(){ $(this).css("background-color", "yellow"); },
+    function(){ $(this).css("background-color", ""); }
+);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 6</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<table border="4">
+    <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th>Ciudad</th>
+    </tr>
+    <tr>
+        <td>Juan</td>
+        <td>25</td>
+        <td>Santo Domingo</td>
+    </tr>
+    <tr>
+        <td>Ana</td>
+        <td>30</td>
+        <td>Santiago</td>
+    </tr>
+    <tr>
+        <td>Carlos</td>
+        <td>22</td>
+        <td>La Vega</td>
+    </tr>
+    <tr>
+        <td>María</td>
+        <td>28</td>
+        <td>San Cristóbal</td>
+    </tr>
+    <tr>
+        <td>Luis</td>
+        <td>35</td>
+        <td>Puerto Plata</td>
+    </tr>
+</table>
+
+<script>
+$("tr").hover(
+    function(){ $(this).css("background-color", "lightgray"); },
+    function(){ $(this).css("background-color", ""); }
+);
+</script>
+
+</body>
+</html>
